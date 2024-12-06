@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, Github, Linkedin, Mail, Gamepad } from 'lucide-react';
+import { Menu, Github, Mail, Gamepad } from 'lucide-react';
 
 export function Header() {
   return (
@@ -8,7 +8,7 @@ export function Header() {
         <div className="flex justify-between items-center">
           <a href="#home" className="flex items-center text-xl font-bold text-gray-900">
             <Gamepad className="mr-2" />
-            GameDev Portfolio
+            Thyvene's Portfolio
           </a>
           
           <nav className="hidden md:flex space-x-8">
@@ -19,13 +19,10 @@ export function Header() {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <a href="https://github.com" className="text-gray-600 hover:text-gray-900">
+            <a href="https://github.com/Thyvene" className="text-gray-600 hover:text-gray-900">
               <Github size={20} />
             </a>
-            <a href="https://linkedin.com" className="text-gray-600 hover:text-gray-900">
-              <Linkedin size={20} />
-            </a>
-            <a href="mailto:contact@example.com" className="text-gray-600 hover:text-gray-900">
+            <a href="mailto:karim09197270@hotmail.fr" className="text-gray-600 hover:text-gray-900">
               <Mail size={20} />
             </a>
           </div>

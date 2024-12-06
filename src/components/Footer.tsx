@@ -9,24 +9,21 @@ export function Footer() {
           <div className="mb-8 md:mb-0">
             <div className="flex items-center">
               <Gamepad className="mr-2" size={24} />
-              <h3 className="text-2xl font-bold">GameDev Portfolio</h3>
+              <h3 className="text-2xl font-bold">Thyvene's Portfolio</h3>
             </div>
             <p className="text-gray-400">Crafting immersive MMORPG experiences</p>
           </div>
           <div className="flex space-x-6">
-            <a href="https://github.com" className="hover:text-blue-400 transition-colors">
+            <a href="https://github.com/Thyvene" className="hover:text-blue-400 transition-colors">
               <Github size={24} />
             </a>
-            <a href="https://linkedin.com" className="hover:text-blue-400 transition-colors">
-              <Linkedin size={24} />
-            </a>
-            <a href="mailto:contact@example.com" className="hover:text-blue-400 transition-colors">
+            <a href="mailto:karim09197270@hotmail.fr" className="hover:text-blue-400 transition-colors">
               <Mail size={24} />
             </a>
           </div>
         </div>
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} GameDev Portfolio. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Thyvene's Portfolio. All rights reserved.</p>
         </div>
       </div>
     </footer>
