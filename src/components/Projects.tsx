@@ -41,22 +41,6 @@ export function Projects() {
                     </span>
                   ))}
                 </div>
-                <div className="flex space-x-4">
-                  <a 
-                    href={project.github}
-                    className="flex items-center text-gray-600 hover:text-gray-900"
-                  >
-                    <Github size={20} className="mr-2" />
-                    Code
-                  </a>
-                  <a 
-                    href={project.demo}
-                    className="flex items-center text-gray-600 hover:text-gray-900"
-                  >
-                    <ExternalLink size={20} className="mr-2" />
-                    Demo
-                  </a>
-                </div>
               </div>
             </div>
           ))}
