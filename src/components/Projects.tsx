@@ -12,13 +12,13 @@ const projects = [
     title: 'Game Server Infrastructure',
     description: 'Highly available game server architecture with load balancing and automatic scaling',
     image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=600',
-    tags: ['C++', 'DevOps', 'Drone CI', 'Networking'],
+    tags: ['C++', 'DevOps', 'Drone CI', 'Networking', 'MySQL DB'],
   },
   {
-    title: 'Combat System Engine',
+    title: 'Combat / Spells System Development',
     description: 'Real-time combat system with skill-based mechanics and network synchronization',
     image: 'https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&q=80&w=600',
-    tags: ['C++', 'Game Design', 'Physics', 'Networking'],
+    tags: ['C++', 'Game Design', 'Physics'],
   }
 ];
 
