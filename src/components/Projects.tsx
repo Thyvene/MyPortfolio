@@ -6,19 +6,26 @@ const projects = [
     title: 'MMORPG Framework',
     description: 'A scalable and modular C++ framework for building MMORPGs with advanced networking capabilities',
     image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=600',
-    tags: ['C++', 'Network Programming', 'Game Architecture', 'Visual Studio'],
+    tags: ['C++', 'Network Programming', 'Game Architecture', 'Visual Studio']
   },
   {
     title: 'Game Server Infrastructure',
     description: 'Highly available game server architecture with load balancing and automatic scaling',
     image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=600',
-    tags: ['C++', 'DevOps', 'Drone CI', 'Networking', 'MySQL DB'],
+    tags: ['C++', 'DevOps', 'Drone CI', 'Networking', 'MySQL DB']
   },
   {
     title: 'Combat / Spells System Development',
     description: 'Real-time combat system with skill-based mechanics and network synchronization',
     image: 'https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&q=80&w=600',
-    tags: ['C++', 'Game Design', 'Physics'],
+    tags: ['C++', 'Game Design', 'Physics']
+  },
+  {
+    title: 'Infinite Runner',
+    description: 'Infinite Runner is an endless runner game made with Unity engine, using a procedural algorithm to generate the map and put obstacles on it!',
+    image: 'https://github.com/Thyvene/InfiniteRunner/blob/master/Assets/Sprites/Player/hero0_big.png',
+    tags: ['C#', 'Game Design', 'Physics', 'Unity', 'Procedural Algorithm'],
+    github: 'https://github.com/Thyvene/InfiniteRunner',
   }
 ];
 
@@ -40,6 +47,22 @@ export function Projects() {
                       {tag}
                     </span>
                   ))}
+                </div>
+                <div className="flex space-x-4">
+                  <a 
+                    href={project.github}
+                    className="flex items-center text-gray-600 hover:text-gray-900"
+                  >
+                    <Github size={20} className="mr-2" />
+                    Code
+                  </a>
+                  <a 
+                    href={project.demo}
+                    className="flex items-center text-gray-600 hover:text-gray-900"
+                  >
+                    <ExternalLink size={20} className="mr-2" />
+                    Demo
+                  </a>
                 </div>
               </div>
             </div>
