@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #2563eb;
+    --secondary: #4f46e5;
+    --background: #0a0a0a;
+    --text: #e5e7eb;
+  }
+
+  body {
+    @apply bg-[var(--background)] text-[var(--text)] font-mono;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%23ffffff" stroke-width="2"><circle cx="12" cy="12" r="3"/></svg>') 8 8, auto;
+  }
+
+  .pixel-borders {
+    @apply border-2 border-[var(--primary)] relative;
+    box-shadow: 0 0 10px var(--primary);
+  }
+
+  .pixel-borders::before {
+    content: '';
+    @apply absolute -inset-1 border-2 border-[var(--secondary)] opacity-50;
+  }
+
+  .game-button {
+    @apply pixel-borders bg-[var(--background)] px-6 py-3 text-[var(--text)] 
+           hover:bg-[var(--primary)] hover:text-[var(--background)] transition-all duration-300;
+  }
+
+  .game-section {
+    @apply relative overflow-hidden;
+  }
+
+  .game-section::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] opacity-10;
+  }
+
+  .terminal-text {
+    @apply font-mono text-green-500;
+  }
+}

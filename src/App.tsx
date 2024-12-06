@@ -1,17 +1,20 @@
 import React from 'react';
-import { Header } from './components/Header';
-import { Hero } from './components/Hero';
+import { GameNavigation } from './components/GameNavigation';
+import { GameHero } from './components/GameHero';
+import { CharacterStats } from './components/stats/CharacterStats';
 import { Projects } from './components/Projects';
 import { Skills } from './components/Skills';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+import './styles/game-theme.css';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
+    <div className="min-h-screen bg-[var(--background)]">
+      <GameNavigation />
       <main>
-        <Hero />
+        <GameHero />
+        <CharacterStats />
         <Projects />
         <Skills />
         <Contact />
