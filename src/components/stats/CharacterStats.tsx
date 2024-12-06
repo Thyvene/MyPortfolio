@@ -9,7 +9,7 @@ export function CharacterStats() {
   const stats = [
     { name: 'Intelligence', value: 85, icon: Brain, color: 'blue' },
     { name: 'Creativity', value: 90, icon: Lightbulb, color: 'yellow' },
-    { name: 'Endurance', value: 75, icon: Battery, color: 'green' },
+    { name: 'Endurance', value: 100, icon: Battery, color: 'green' },
     { name: 'Agility', value: 80, icon: Zap, color: 'purple' },
   ];
 
