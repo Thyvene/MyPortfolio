@@ -25,7 +25,7 @@ const projects = [
     description: 'Infinite Runner is an endless runner game made with Unity engine, using a procedural algorithm to generate the map and put obstacles on it!',
     image: 'https://github.com/Thyvene/InfiniteRunner/blob/master/Assets/Sprites/Player/hero0_big.png',
     tags: ['C#', 'Game Design', 'Physics', 'Unity', 'Procedural Algorithm'],
-    github: 'https://github.com/Thyvene/InfiniteRunner',
+    github: 'https://github.com/Thyvene/InfiniteRunner'
   }
 ];
 
@@ -49,20 +49,24 @@ export function Projects() {
                   ))}
                 </div>
                 <div className="flex space-x-4">
-                  <a 
-                    href={project.github}
-                    className="flex items-center text-gray-600 hover:text-gray-900"
-                  >
-                    <Github size={20} className="mr-2" />
-                    Code
-                  </a>
-                  <a 
-                    href={project.demo}
-                    className="flex items-center text-gray-600 hover:text-gray-900"
-                  >
-                    <ExternalLink size={20} className="mr-2" />
-                    Demo
-                  </a>
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      className="flex items-center text-gray-600 hover:text-gray-900"
+                    >
+                      <Github size={20} className="mr-2" />
+                      Code
+                    </a>
+                  )}
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      className="flex items-center text-gray-600 hover:text-gray-900"
+                    >
+                      <ExternalLink size={20} className="mr-2" />
+                      Demo
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
