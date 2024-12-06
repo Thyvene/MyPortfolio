@@ -1,7 +1,7 @@
 import React from 'react';
 
 const skills = {
-  'Game Development': ['C++', 'Game Architecture', 'Physics Engines', 'Graphics Programming', 'DirectX'],
+  'Game Development': ['C++', 'Game Architecture', 'Physics Engines', 'Graphics Programming', 'Unity', 'Unreal Engine'],
   'Networking': ['TCP/IP', 'UDP', 'Network Programming', 'Client-Server Architecture', 'State Synchronization'],
   'Tools & IDE': ['Visual Studio', 'Drone CI', 'Git', 'CMake', 'Perforce'],
   'Additional': ['Game Design', 'Performance Optimization', 'Multithreading', 'Design Patterns', 'Agile']
